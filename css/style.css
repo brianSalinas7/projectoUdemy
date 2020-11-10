@@ -1,0 +1,260 @@
+html {
+    font-size: 62.5%; /**RESET PARA REMS**/ /*62.5=10 px*/
+    box-sizing: border-box;
+}
+*, *:before, :after{
+    box-sizing: inherit;
+}
+
+body {
+    
+    font-family: 'Lato', sans-serif;
+    line-height: 2;
+}
+
+
+/**GLOBAL**/
+
+img {
+ max-width: 100%;
+}
+
+.contenedor {
+    max-width: 120rem; /**120 rem = 1200 px**/
+    margin-right: auto;
+    margin-left: auto;
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-size: 3.4rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+h4 {
+    font-size: 2.6rem;
+}
+
+/**Utilidades*/
+
+.seccion {
+
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.fw-300 {
+    font-weight: 300;
+}
+.centrar-texto {
+    text-align: center;
+}
+.d-block  {
+    display: block!important;
+}
+
+/**Botones**/
+
+.boton {
+
+color: #ffffff;
+font-weight: 700;
+text-decoration: none;
+font-size: 1.8rem;
+padding: 1rem 3rem;
+margin-top: 3rem;
+display: inline-block;
+text-align: center;
+
+}
+
+.boton-amarillo {
+
+background-color: #E08709;
+
+
+}
+.boton-verde {
+
+background-color: #71b100;
+
+}
+
+
+/*Header incio*/
+
+.site-header.inicio{
+    background-image: url(../img/header.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 60rem;
+}
+
+.contenido-header {
+    height: 100%;                               /*con este contenido.header se utiliza para poder editar lo que es la imagen del logo */
+    display: flex;                              /*y el h1 que se encuentra abajo, aplicando un flex asi podemos separarlos y dejarlos */
+    flex-direction: column;                     /*uno arriba y otro abajo con "justify-content: space-between;" */
+    justify-content: space-between;             /*-- height sirve para poder usar el 100 % de la imagen y asi poder moverlos*/
+    
+
+    
+}                                                                   /*pag 10 del cuaderno*/
+
+.contenido-header h1 {
+    color: white;                       /* aca solo se edita especificamente el h1 que se encuentra dentro del contenido-header*/
+    padding-bottom: 3rem;
+    font-size: 3rem;
+    max-width: 60rem;                                                   
+    line-height: 2;
+}
+
+.barra {
+    
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3rem;
+
+}
+
+/**NAVEGACION**/
+
+.navegacion a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.8rem; /** 1.8 rem = 18 px **/
+    margin-right: 2rem;
+
+}
+.navegacion a:hover {
+    color: green;
+    
+}
+.navegacion a:last-of-type {
+    margin:0;
+}
+
+/**Iconos Nosotros**/
+
+
+
+.iconos-Nosotros {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.icono {
+    flex-basis: calc (33.3% - 1rem);
+    text-align: center;
+}
+
+.icono h3 {
+    text-transform: uppercase;
+}
+
+.iconos-caracteristicas {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+.iconos-caracteristicas li{
+    
+    display: flex;
+}
+.iconos-caracteristicas li img {
+    margin-right: 2rem;
+}
+
+/**Anuncios**/
+
+.contenedor-anuncios {
+    display: flex;
+    justify-content: space-between;
+}
+.anuncio {
+    flex-basis: calc(33.3% - 1rem);
+    border: 1px solid #b5b5b5;
+    background-color: #f5f5f5;
+
+    
+}
+.contenido-anuncio {
+    padding: 2rem;
+}
+.contenido-anuncio h3 , .contenido-anuncio p {
+    margin: 0;
+}
+.precio {
+    color: green;
+    font-weight: 700;
+}
+.ver-todas {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/** Contacto HOME **/
+
+.imagen-contacto {
+    background-image: url(../img/encuentra.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 40rem;
+    display: flex;
+    align-items: center;
+}
+.contenido-contacto {
+    flex: 1;
+    color: #ffffff;
+}
+.contenido-contacto p {
+    font-size: 1.8rem;
+}
+
+/** Seccion Inferior **/
+
+.seccion-inferior {
+    display: flex;
+    justify-content: space-between;
+
+}
+.seccion-inferior .blog {
+    flex-basis: 60%;
+
+}
+.seccion-inferior .testimoniales {
+
+    flex-basis: calc(40% - 2rem);
+}
+
+.entrada-blog {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.entrada-blog:last-of-type {
+    margin-bottom: 0;
+}
+
+.entrada-blog .imagen {
+
+    flex-basis: 40%;
+}
+.entrada-blog .texto-entrada {
+
+    flex-basis: calc(60% - 3rem);
+}
+.texto-entrada h4 {
+    margin: 0;
+    line-height: 1.2;
+}
